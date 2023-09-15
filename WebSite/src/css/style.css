@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Hursheys";
-  src: url('/src/fonts/Hursheys.otf') format('otf'),
+  src: url('./src/fonts/Hursheys.otf') format('otf'),
 }
 
 /*Navgeração*/
@@ -30,7 +30,7 @@
 
 .sec1
 {
-  background-image: url("/src/img/FundoAnun.jpg");
+  background-image: url("./src/img/FundoAnun.jpg");
   background-color: #22262c;
   position: absolute;
   height: 100vh;
