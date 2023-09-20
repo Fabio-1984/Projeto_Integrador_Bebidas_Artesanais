@@ -1,0 +1,45 @@
+
+/*LOJA*/
+.bebidaContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.bebidaBox {
+    background-color: rgb(240, 240, 240);
+    width: 200px;
+    height: 330px;
+    box-shadow: 0 0 10px #0000008e;
+    transition: box-shadow 300ms, border-radius 300ms, background-color 300ms;
+    user-select: none;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bebidaBox:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px #000000;
+    transition: box-shadow 300ms, border-radius 300ms, background-color 300ms;
+    border-radius: 5px;
+}
+
+.bebidaImg {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 150px;
+}
+
+.bebidaTit {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: larger;
+    text-align: center;
+}
+
+.bebidaVal {
+    margin-top: 20px;
+    font-size: medium;
+    text-align: center;
+    margin: 0 auto;
+}
