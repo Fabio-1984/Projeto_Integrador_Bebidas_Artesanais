@@ -1,4 +1,28 @@
 
+/*HEAD & FOOTER*/
+ul#menu li {
+    display:inline;
+}
+ul#rodape li{
+    display: inline;
+}
+
+/*MAIN GERAL*/
+
+main {
+    text-align: center;
+}
+/*FALE CONOSCO*/
+
+.butcad {
+    margin-top: 12px;
+}
+
+.butcad li {
+    display: inline;
+}
+
+
 /*LOJA*/
 .bebidaContainer {
     display: flex;
