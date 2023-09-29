@@ -156,7 +156,7 @@ main {
   flex-direction: column;
   gap: 0px;
   width: 625px;
-  height: 325px;
+  height: 365px;
   outline: 0px rgba(255, 255, 255, 0) solid;
   transform: translateY(-0px);
   transition: box-shadow 300ms, transform 300ms, outline 300ms;
@@ -169,9 +169,19 @@ main {
   transition: box-shadow 300ms, transform 300ms, outline 300ms;
 }
 
-.sacCad input[type=text] {
-    border: 2px solid red;
-    border-radius: 4px;
+.sacCad input {
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid #2b2b30;
+  background-color: #ffffff;
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: #000000;
+}
+
+.sacCad tr {
+  margin: 10px;
 }
 
 .butcad {
