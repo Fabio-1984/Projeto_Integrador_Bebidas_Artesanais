@@ -165,15 +165,15 @@ main {
 
 .sacCad:hover {
   box-shadow: 0 30px 30px #00000060;
-  outline: 4px #ffae00 solid;
-  border-bottom: 6px solid #ffae00;
+  outline: 4px #402F1D solid;
+  border-bottom: 6px solid #402F1D;
   transform: translateY(-10px);
   transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms;
 }
 
 .sacCad abbr {
   font-style: italic;
-  color: #ffae00;
+  color: #ffffff;
   font-size: 23px;
   text-decoration: none;
   margin-left: 5px;
@@ -203,9 +203,9 @@ main {
 }
 
 .sacCad input:focus {
-  border-bottom: 7px solid #ffae00;
+  border-bottom: 7px solid #402F1D;
   background-color: #ffffff;
-  outline: 2px #ffae00 solid;
+  outline: 2px #402F1D solid;
   transform: translateY(-2px);
   transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms, background-color 300ms;
 }
@@ -231,10 +231,10 @@ main {
 }
 
 .butCad:hover {
-  border-bottom: 5px solid #ffae00 !important;
+  border-bottom: 5px solid #402F1D !important;
   border: 0px;
   background-color: #ffffff;
-  outline: 2px #ffae00 solid;
+  outline: 2px #402F1D solid;
   transform: translateY(-5px);
   transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms, background-color 300ms;
   cursor: pointer;
