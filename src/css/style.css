@@ -6,17 +6,17 @@
   }
   
   ::-webkit-scrollbar-track {
-	  background: #ffffff;
+	  background: #2b2b30;
   }
    
   ::-webkit-scrollbar-thumb {
-    background-color: #2b2b30;
+    background-color: #dadada;
 	  border-radius: 10px;
     transition: background-color 0.5s;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-	  background-color: #404046;
+	  background-color: #ffffff
 	  border-radius: 10px;
     transition: background-color 0.5s;
   }
@@ -59,6 +59,7 @@ ul {
   position: fixed;
   width: 100%;
   z-index: 1;
+  user-select: none;
 }
 
 nav li {
@@ -696,4 +697,48 @@ main {
     letter-spacing: 0px;
     padding-top: 8px;
   }
+}
+
+/*APRESENTAÇÃO (SOBRE NÓS)*/
+
+.headerAbe {
+  height: 0px;
+}
+
+.abeMain {
+  background-color: #16161a;
+  color: white;
+  padding-top: 20px;
+}
+
+.logoAbe {
+  width: 400px;
+  height: 120px;
+  filter: drop-shadow(0 0 5px black);
+}
+
+.home1 {
+  height: 100vh !important;
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+  position: relative;
+}
+
+#paralaxx1 {
+  /* The image used */
+  background-image: url('/src/img/barrels-4859918_1280.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.scrollFot {
+  position: relative;
+  overflow-x: hidden;
 }
