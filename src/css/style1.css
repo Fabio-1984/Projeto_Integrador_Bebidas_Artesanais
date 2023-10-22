@@ -30,7 +30,7 @@
   }
 
 ul#menu li {
-    display: inline;
+    display:inline;
 }
 ul#rodape li{
     display: inline;
@@ -79,7 +79,7 @@ nav li {
     display: block;
     color: white;
     text-align: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     margin-left: 3px;
     margin-right: 3px;
     text-decoration: none;
@@ -88,7 +88,7 @@ nav li {
   }
   
   nav li a:hover:not(.active) {
-    /*background-color: #2b2b3050;*/
+    background-color: #2b2b3050;
     border-radius: 10px;
     margin-top: -5px;
     transition: margin 300ms, background-color 300ms;
@@ -133,6 +133,62 @@ nav li {
     display: flex;
     justify-content: center;
     gap: 40px;
+  }
+
+  .show-menu {
+    cursor: pointer;
+  }
+  
+  input.checkbox-menu[type="checkbox"] {
+    display: none;
+    appearance: none;
+  }
+  
+  input.checkbox-menu[type="checkbox"]:checked ~ div.menu-block {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-icon {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 0.5em;
+    vertical-align: middle;
+  }
+  
+  .menu-block {
+    display: inline-block;
+    opacity: 0;
+    vertical-align: middle;
+    visibility: hidden;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+  }
+  
+  ul.navUL {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul.navUL li {
+    display: inline-block;
+    padding: 0px 5px;
+  }
+  
+  ul.navUL li a {
+    color: #999999;
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+  }
+  
+  ul.navUL li a:hover {
+    color: #000000;
+    text-decoration: none;
   }
 
 /*MAIN GERAL*/
@@ -327,7 +383,7 @@ main {
   color: white;
   margin: 0 auto;
   border-radius: 0px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 25px;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -400,22 +456,22 @@ main {
 
 /*---------------RESPONSIVIDADE CADASTRO-------------------*/
 
-@media screen and (max-width: 674px) {
+@media screen and (max-width: 642px) {
   .cadastroContainer{
     background-color: #2b2b30a0;
     backdrop-filter: blur(30px);
     box-shadow: 0 5px 10px #00000090;
     border-bottom: 0px solid #2b2b30;
     color: white;
-    margin: 55px auto 0px auto;
+    margin: 0 auto;
     border-radius: 0px;
-    padding: 0px;
+    padding: 5px;
     border-radius: 25px;
     flex-wrap: nowrap;
     flex-direction: column;
     gap: 0px;
     width: 360px;
-    height: 500px;
+    height: 560px;
     outline: 2px #2b2b30 solid;
     transform: translateY(-0px);
     transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms;
@@ -430,48 +486,8 @@ main {
   
   .cadCepTdResp {
     margin: 10px;
-    padding: 0px 8px;
+    padding: 0px 16px;
     text-align: left;
-  }
-
-  td {
-    padding: 0px 8px;
-  }
-
-  nav li a:hover:not(.active) {
-    /*background-color: #2b2b3050;*/
-    border-radius: 10px;
-    margin-top: -5px;
-    transition: margin 300ms, background-color 300ms;
-  }
-
-  #rodape {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  footer {
-    padding-top: 0px;
-    padding-bottom: 4px;
-  }
-
-  span {
-    font-size: 12px;
-  }
-
-  .butCadCont {
-    margin-top: 8px;
-  }
-}
-
-@media screen and (max-width: 517px) {
-  .cadastroContainer {
-    height: 482px;
-  }
-
-  .butCadCont {
-    margin-top: 4px;
   }
 }
 
