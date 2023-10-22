@@ -256,6 +256,7 @@ main {
 .sacCad {
   background-color: #2b2b30a0;
   backdrop-filter: blur(30px);
+  user-select: none;
   box-shadow: 0 5px 10px #00000090;
   border-bottom: 0px solid #2b2b30;
   color: white;
@@ -585,5 +586,114 @@ main {
 
   .butCadCont {
     margin-top: 4px;
+  }
+}
+
+/*PAGINA INICIAL*/
+
+.indCad {
+  background-color: #2b2b30a0;
+  backdrop-filter: blur(30px);
+  user-select: none;
+  box-shadow: 0 5px 10px #00000090;
+  border-bottom: 0px solid #2b2b30;
+  color: white;
+  margin: 0 auto;
+  border-radius: 0px;
+  padding: 25px;
+  border-radius: 25px;
+  text-align: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 0px;
+  width: 625px;
+  height: 300px;
+  outline: 2px #2b2b30 solid;
+  transform: translateY(-0px);
+  transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms;
+}
+
+.indCad:hover {
+  box-shadow: 0 30px 30px #00000060;
+  outline: 4px #402F1D solid;
+  border-bottom: 6px solid #402F1D;
+  transform: translateY(-10px);
+  transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms;
+}
+
+.logoHome {
+  width: 220px;
+  height: 65px;
+}
+
+.flexPagCont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.flexPag {
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-top: 5px;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  flex: 1 0 21%;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+  border-bottom: 2px solid #2b2b30;
+  outline: 1px #2b2b30 solid;
+  background-color: #ffffff28;
+  border-radius: 15px;
+  transform: translateY(-0px);
+  transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms, background-color 300ms;
+}
+
+.flexPag:hover {
+  box-shadow: 0 30px 30px #00000060;
+  background-color: #ffffff50;
+  outline: 4px #402F1D solid;
+  border-bottom: 6px solid #402F1D;
+  transform: translateY(-5px);
+  transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms, background-color 300ms;
+}
+
+#icoInd {
+  font-size: 30px;
+}
+
+/*RESPONSIVIDADE INDEX*/
+
+@media screen and (max-width: 674px) {
+  .indCad{
+    background-color: #2b2b30a0;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 5px 10px #00000090;
+    border-bottom: 0px solid #2b2b30;
+    color: white;
+    margin: 55px auto 0px auto;
+    border-radius: 0px;
+    padding: 25px;
+    border-radius: 25px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0px;
+    width: 360px;
+    height: 420px;
+    outline: 2px #2b2b30 solid;
+    transform: translateY(-0px);
+    transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms;
+  }
+  .flexPag {
+    font-size: 12px;
+    letter-spacing: 0px;
+    padding-top: 8px;
   }
 }

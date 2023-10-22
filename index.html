@@ -1,30 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <div class="container">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=B, initial-scale=1.0">
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-            <link rel="stylesheet" href="src/css/style.css">
-            <title>Home | Bebidas do Brasil</title>
-        </head>
-        <body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=B, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="src/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <script src="src/js/navbar.js"></script>
+        <title>Home | Bebidas do Brasil</title>
+    </head>
+    <body>
             <header>
-                <nav>
-                    <ul id="menu">
-                        <li style="float: left"><a href="/index.html"><img src="./src/img/logo_e_variacoes/bebidas_do_brasil_white.png" alt="logo" class="logo"><font class="txtLogo"></font></a></li>
-                        <li style="float:right"><a href="loja.html">Destilados</a></li>
-                        <li style="float:right"><a href="loja.html">Fermentados</a></li>
-                        <li style="float:right"><a href="loja.html">Não Alcoólicos</a></li>
-                        <li style="float:right"><a href="">Carrinho</a></li>
-                        <li style="float:right"><a href="">Login</a></li>
+                <nav id="menu" class="menuResp">
+                    <a href="./index.html"><img src="./src/img/logo_e_variacoes/bebidas_do_brasil_white.png" alt="logo" class="logo"></a>
+                    <ul>
+                        <a href="javascript:void(0);" class="icon" onclick="navBar()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <li><a href="loja.html">Destilados</a></li>
+                        <li><a href="loja.html">Fermentados</a></li>
+                        <li><a href="">Carrinho</a></li>
+                        <li><a href="">Login</a></li>
                     </ul>
                 </nav>
             </header>
-            <main>
-                <h1>Seja Bem-vindo a Bebidas do Brasil</h1>
-                <h5>A arte das pequenas destilarias mais próxima a você</h5>
-                <img src="https://classic.exame.com/wp-content/uploads/2016/09/size_960_16_9_uisque1.jpg?quality=70&strip=info&w=960" width="350px" alt="">
+            <main class="sacMain">
+                <video src="src/video/indVideo.mp4" class="cadVideo" autoplay loop></video>
+                <div class="indCad">
+                    <h1><img src="./src/img/logo_e_variacoes/bebidas_do_brasil_white.png" alt="logo" class="logoHome"></h1>
+                    <div class="cadLabel1">Seja Bem-vindo a Bebidas do Brasil.</div>
+                    <div class="cadLabel2">A arte das pequenas destilarias mais próxima a você!</div>
+                    <hr>
+                    <section class="flexPagCont">
+                        <a class="flexPag" href="abertura.html">
+                            Sobre Nós!
+                            <i class="fa-solid fa-circle-info" id="icoInd"></i>
+                        </a>
+
+                        <a class="flexPag" href="loja.html">
+                            Loja
+                            <i class="fa-solid fa-store" id="icoInd"></i>
+                        </a>
+
+                        <a class="flexPag" href="cadastro.html">
+                            Cadastro
+                            <i class="fa-regular fa-file-lines" id="icoInd"></i>
+                        </a>
+
+                        <a class="flexPag" href="SAC.html">
+                            Fale Conosco
+                            <i class="fa-regular fa-message" id="icoInd"></i>
+                        </a>
+                    </section>
+                </div>
             </main>
             <footer>
                 <ul id="rodape">
@@ -35,7 +63,6 @@
                 <span>BEBIDAS DO BRASIL</span>
                 <span>CNPJ: 12.345.678/0001-90</span>
             </footer>
-    </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
