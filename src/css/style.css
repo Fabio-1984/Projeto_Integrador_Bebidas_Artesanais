@@ -234,6 +234,10 @@ nav li {
 main {
     text-align: center;
 }
+
+label {
+  font-family: Geneva, Tahoma, sans-serif;
+}
 /*FALE CONOSCO*/
 
 .cadVideo {
@@ -440,6 +444,7 @@ main {
 
 .tit-loja {
   color: #ffffff;
+  font-family: Geneva, Tahoma, sans-serif;
   text-shadow: 0 0 10px #000000;
   margin: 0px;
 }
@@ -472,6 +477,7 @@ main {
 .bebidaTit {
     margin: 10px;
     font-weight: 600;
+    font-family: Geneva, Tahoma, sans-serif;
     font-size:medium;
     text-align: center;
     height: 70px;
@@ -480,8 +486,16 @@ main {
 .bebidaVal {
     margin-top: 20px;
     font-size: medium;
+    font-family: Geneva, Tahoma, sans-serif;
     text-align: center;
     margin: 0 auto;
+}
+
+.span-preco {
+  font-family: Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: medium;
+  
 }
 
 /*CADASTRO*/
@@ -1264,7 +1278,8 @@ main {
 }
 
 .botao-submit-loja {
-  margin: 10px;
+  margin: 5px;
+  font-family: Geneva, Tahoma, sans-serif;
   background-color: rgb(230, 230, 230);
   font-size: small;
   border-radius: 5px;
