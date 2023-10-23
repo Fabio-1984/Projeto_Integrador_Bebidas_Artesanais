@@ -405,7 +405,16 @@ main {
   display:block;
   margin: 0px;
   padding: 0px;
-  background-image: url("/src/img/bebidas/cerveja-em-uma-caneca-de-vidro-com-vista-de-alto-angulo-de-orelhas-de-trigo-em-uma-mesa-de-madeira.jpg");
+  background-image: url("/src/img/bebidas/cerveja-em-uma-caneca-de-vidro-1.jpg");
+  background-repeat: round;
+}
+
+.corpo-loja {
+  display:block;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("/src/img/bebidas/mistura-de-copos-de-coquetel-com-gelo-e-limao.jpg");
+  background-size: cover;
   background-repeat: round;
 }
 
