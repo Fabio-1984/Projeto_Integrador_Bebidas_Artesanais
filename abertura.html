@@ -4,42 +4,94 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=B, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="stylesheet" href="src/css/style.css">
+        <script src="src/js/navbar.js"></script>
         <title>Apresentação | Bebidas do Brasil</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <nav id="menu">
-                    <img src="./src/img/logo_e_variacoes/bebidas_do_brasil_white.png" alt="logo" class="logo"></a>
-                    <ul>
-                        <li><a href="loja.html">Destilados</a></li>
-                        <li><a href="loja.html">Fermentados</a></li>
-                        <li><a href="">Carrinho</a></li>
-                        <li><a href="">Login</a></li>
-                    </ul>
-                </nav>
+        <header class="headerAbe">
+            <nav id="menu" class="menuResp">
+                <a href="./index.html"><img src="./src/img/logo_e_variacoes/bebidas_do_brasil_white.png" alt="logo" class="logo"></a>
+                <ul>
+                    <a href="javascript:void(0);" class="icon" onclick="navBar()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <li><a href="loja.html">Destilados</a></li>
+                    <li><a href="loja.html">Fermentados</a></li>
+                    <li><a href="">Carrinho</a></li>
+                    <li><a href="">Login</a></li>
+                </ul>
+            </nav>
         </header>
-            <main class = "sacMain">
-                <section>
-                    <h2>A arte das pequenas destilarias mais próxima a você</h2>
-                    <img src="./src/img/barrels-4859918_1280.jpg" alt="corredor com barris de madeira" width="360" height="240">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Earum labore, consequatur facere ducimus aperiam dolore
-                    numquam nulla ipsum nihil quo esse expedita sit eveniet
-                    quibusdam. Magnam unde nam voluptatem provident!</p>
+            <main class = "abeMain">
+                <section class="home1" id="paralaxx1">
+                    <img src="./src/img/logo_e_variacoes/bebidas_do_brasil_white.png" alt="logo" class="logoAbe"></a>
+                <ul>
+                    <div class="abeLabel1">A arte das pequenas destilarias <br> mais próxima a você!</h2>
                 </section>
-                <section>
-                    <h2>Os melhores ingredientes</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Earum labore, consequatur facere ducimus aperiam dolore
-                        numquam nulla ipsum nihil quo esse expedita sit eveniet
-                        quibusdam. Magnam unde nam voluptatem provident!</p>
-                    <img src="./src/img/hop-vines-7415073_1280.jpg" alt="lúpulo" width="360" height="240">
+                <section class="home2" id="homeHover">
+                    <div class="abeLabel2">OS MELHORES PRODUTOS!
+                        <div class="abeLabel2-1">Aqui nós estamos comprometidos em trazer a melhor experiência com as melhores bebidas artesanais do Brasil. <br>
+                            <a href="loja.html">Acesse nossa loja virtual aqui...</a></div>
+                        </div>
+                    <img src="./src/img/hop-vines-7415073_1280.jpg" alt="lúpulo" width="360" height="240" class="abeImg1">
                 </section>
-                <a href="">Acesse nossa loja virtual</a>
+                <section class="home3" id="homeHover">
+                    <img src="./src/img/alcohol.jpg" alt="lúpulo" width="360" height="240" class="abeImg2">
+                    <div class="abeLabel3">SERVIÇO DE PONTA!
+                        <div class="abeLabel3-1">Temos nosso serviço de fale conosco, para aprimorar ainda mais sua experiência com nossos serviços. <br>
+                            <a href="SAC.html">Fale conosco aqui...</a></div>
+                        </div>
+                </section>
+                <section class="home2" id="homeHover">
+                    <div class="abeLabel2">CADASTRE AGORA!
+                        <div class="abeLabel2-1">Cadastre-se agora, para aproveitar nossas ofertas e sair comprando nossas melhores bebidas. <br>
+                            <a href="cadastro.html">Cadastre-se aqui...</a></div>
+                        </div>
+                    <img src="./src/img/barrels-4859918_1280.jpg" alt="lúpulo" width="360" height="240" class="abeImg1">
+                </section>
+                <section class="homeGrupo">
+                    <div class="abeSec">
+                        <h1><img src="./src/img/logo_e_variacoes/bebidas_do_brasil_white.png" alt="logo" class="logoAbeHome"> | <img src="src/img/logoProz/PROZ.png" class="logoAbeHome2" width="50px"></h1>
+                        <div class="cadLabel1">Grupo 4 do Projeto Integrador Proz, Turma 3, Talento Cloud 2023. </div>
+                        <div class="cadLabel2">O grupo 4 é composto por:</div>
+                        <hr>
+                        <section class="flexGruCont">
+                            <a class="flexGru" href="https://github.com/iSKGtm" target="_blank">
+                                Anthony M.
+                                <img src="https://avatars.githubusercontent.com/u/109235286?v=4" id="grupoNome" height="80px" width="80px">
+                            </a>
+    
+                            <a class="flexGru" href="https://github.com/Fabio-1984" target="_blank">
+                                Fabio N.
+                                <img src="https://avatars.githubusercontent.com/u/80645214?v=4" id="grupoNome" height="80px" width="80px">
+                            </a>
+    
+                            <a class="flexGru" href="https://github.com/lucianopoll" target="_blank">
+                                Luciano P.
+                                <img src="https://avatars.githubusercontent.com/u/120143437?v=4" id="grupoNome" height="80px" width="80px">
+                            </a>
+
+                            <a class="flexGru" href="https://github.com/megatrommendes" target="_blank">
+                                Marcio M.
+                                <img src="https://avatars.githubusercontent.com/u/108750178?v=4" id="grupoNome" height="80px" width="80px">
+                            </a>
+    
+                            <a class="flexGru" href="https://github.com/paulo5150" target="_blank">
+                                Paulo L.
+                                <img src="https://avatars.githubusercontent.com/u/108300157?v=4" id="grupoNome" height="80px" width="80px">
+                            </a>
+
+                            <a class="flexGru" href="https://github.com/WillianBento" target="_blank"">
+                                Willian B.
+                                <img src="/src/img/imgWillian/willian.png" id="grupoNome" height="80px" width="80px">
+                            </a>
+                        </section>
+                    </div>
+                </section>
             </main>
-            <footer>
+            <footer class="scrollFot">
                 <ul id="rodape">
                     <li><a href="./abertura.html">Nossa proposta</a></li>
                     <li><a href="./cadastro.html">Crie uma nova conta</a></li>
@@ -48,6 +100,6 @@
                 <span>BEBIDAS DO BRASIL</span>
                 <span>CNPJ: 12.345.678/0001-90</span>
             </footer>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
