@@ -872,15 +872,15 @@ main {
 }
 
 #homeHover {
-  scale: 100%;
-  transition: scale 300ms;
   filter: drop-shadow(0 0 5px #ffffff25);
+  transform: translateY(-0px);
+  transition: filter 300ms, transform 300ms;
 }
 
 #homeHover:hover {
-  scale: 105%;
-  transition: scale 300ms;
-  filter: drop-shadow(0 0 7px #ffffff50);
+  transform: translateY(-15px);
+  transition: filter 300ms, transform 300ms;
+  filter: drop-shadow(0 10px 7px #ffffff34);
 }
 
 .abeSec {
@@ -1082,6 +1082,28 @@ main {
   }
   .flexGru {
     color: #ffffff;
+  }
+  #homeHover:hover {
+    transform: translateY(-0px);
+    transition: filter 300ms, transform 300ms;
+    filter: drop-shadow(0 0 5px #ffffff25);
+  }
+  .abeSec {
+    box-shadow: 0 30px 30px #00000060;
+    outline: 4px #ffffff solid;
+    border-bottom: 6px solid #ffffff;
+    transform: translateY(-10px);
+    transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms;
+  }
+  .flexGru:hover {
+    box-shadow: 0 30px 30px #00000060;
+    text-shadow: 0 0 5px black;
+    background-color: #ffffff50;
+    outline: 1px #ffffff solid;
+    border-bottom: 6px solid #ffffff;
+    color: #ffffff;
+    transform: translateY(-0px);
+    transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms, background-color 300ms, color 300ms, text-shadow 300ms;
   }
 }
 
