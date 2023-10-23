@@ -5,14 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="src/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="shortcut icon" href="src/favicon/fav.ico">
-        <title>Cadastro | Bebidas do Brasil</title>
+        <script src="src/js/navbar.js" defer></script>
+        <title>Loja | Bebidas do Brasil</title>
     </head>
-    <body>
+    <body class="corpo-loja-destilados">
         <header>
-            <nav id="menu">
+            <nav id="menu" class="menuResp">
                 <a href="./index.html"><img src="./src/img/logo_e_variacoes/bebidas_do_brasil_white.png" alt="logo" class="logo"></a>
                 <ul>
+                    <a href="javascript:void(0);" class="icon" onclick="navBar()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                     <li><a href="loja-destilados.html">Destilados</a></li>
                     <li><a href="loja-fermentados.html">Fermentados</a></li>
                     <li><a href="">Carrinho</a></li>

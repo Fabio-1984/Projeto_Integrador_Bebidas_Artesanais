@@ -577,7 +577,7 @@ main {
     margin: 55px auto 0px auto;
     border-radius: 0px;
     padding: 0px;
-    border-radius: 25px;
+    /*border-radius: 25px;*/
     flex-wrap: nowrap;
     flex-direction: column;
     gap: 0px;
