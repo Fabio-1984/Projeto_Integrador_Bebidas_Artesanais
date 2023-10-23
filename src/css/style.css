@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 78px;
+    height: 102px;
     width: 100%;
   }
 
@@ -270,13 +270,31 @@ main {
 
 
 /*LOJA*/
+
+.corpo-loja-destilados {
+  display:block;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("/src/img/bebidas/whisky-e1609964674686.jpg");
+  background-size: cover;
+  background-repeat: round;
+}
+
+.corpo-loja-fermentados {
+  display:block;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("/src/img/bebidas/cerveja-em-uma-caneca-de-vidro-com-vista-de-alto-angulo-de-orelhas-de-trigo-em-uma-mesa-de-madeira.jpg");
+  background-repeat: round;
+}
+
 .bebidaContainer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
-    margin: 2em;
-    padding: 2em;
+    margin: 1em auto;
 }
 
 .copo-drink {
@@ -294,6 +312,7 @@ main {
 .tit-loja {
   color: #ffffff;
   text-shadow: 0 0 10px #000000;
+  margin: 0px;
 }
 
 .bebidaBox {
@@ -322,11 +341,11 @@ main {
 }
 
 .bebidaTit {
-    margin: 10px 10px 0px 10px;
+    margin: 10px;
     font-weight: 600;
-    font-size: larger;
+    font-size:medium;
     text-align: center;
-    height: 57.6px;
+    height: 70px;
 }
 
 .bebidaVal {
@@ -338,6 +357,40 @@ main {
 
 .bebida-img-tag {
   max-height: 233px;
+}
+
+.quantidadeEBotao {
+  margin: 10px;
+}
+
+.qtde-itens {
+  width: 60px;
+  margin: 5px 0px;
+}
+
+.botao-submit-loja {
+  margin: 10px;
+  background-color: rgb(230, 230, 230);
+  font-size: small;
+  border-radius: 5px;
+}
+
+.scrollFot {
+  background-color: #2b2b30;
+  color: white;
+  padding: 8px;
+  justify-content: center;
+  font-weight: 800;
+  font-size: larger;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  bottom: 0px;
+  position:relative;
+  overflow-x: hidden;
 }
 
 /*CADASTRO*/
@@ -485,6 +538,23 @@ main {
   .butCadCont {
     margin-top: 8px;
   }
+  .scrollFot {
+    background-color: #2b2b30;
+    color: white;
+    padding: 4px 0px;
+    justify-content: center;
+    font-weight: 800;
+    font-size: larger;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    bottom: 0px;
+    position:relative;
+    overflow-x: hidden;
+  }
 }
 
 @media screen and (max-width: 517px) {
@@ -495,14 +565,22 @@ main {
   .butCadCont {
     margin-top: 4px;
   }
+
+  .scrollFot {
+    background-color: #2b2b30;
+    color: white;
+    padding: 4px 0px;
+    justify-content: center;
+    font-weight: 800;
+    font-size: larger;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    bottom: 0px;
+    position:relative;
+    overflow-x: hidden;
+  }
 }
-
-/* LOJA */
-
-.corpo-loja-destilados {
-  background-image: url("/src/img/bebidas/whisky-e1609964674686.jpg");
-  background-size:cover;
-}
-
-
-
