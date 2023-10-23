@@ -725,16 +725,18 @@ main {
 }
 
 .logoAbe {
-  width: 600px;
-  height: 170px;
+  width: 750px;
+  height: 225px;
   filter: drop-shadow(0 0 5px black);
+  transition: all 300ms;
 }
 
 .abeLabel1 {
-  font-size: 30px;
+  font-size: 37px;
   filter: drop-shadow(0 0 5px black);
   font-family: Geneva, Tahoma, sans-serif;
   font-weight: 900;
+  transition: all 300ms;
 }
 
 .home1 {
@@ -785,7 +787,7 @@ main {
 .abeLabel2 {
   flex-wrap: wrap;
   flex-direction: column;
-  font-size: 2.5vw;
+  font-size: 45px;
   filter: drop-shadow(0 0 5px black);
   font-family: Geneva, Tahoma, sans-serif;
   font-weight: 900;
@@ -795,11 +797,11 @@ main {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   outline: 2px #ffffff solid;
-  padding: 20px;
+  padding: 10px;
 }
 
 .abeLabel2-1 {
-  font-size: 1vw;
+  font-size: 23px;
   font-weight: 100;
   border-bottom-left-radius: 20px;
   text-align: right;
@@ -973,19 +975,67 @@ main {
 }
 
 /*RESPONSIVIDADE APRESENTAÇÃO (SOBRE NÓS)*/
+@media screen and (max-width: 1865px) {
+  .logoAbe {
+    width: 700px;
+    height: 205px;
+    transition: all 300ms;
+  }
+  
+  .abeLabel1 {
+    font-size: 35px;
+    font-family: Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    transition: all 300ms;
+  }
+}
+
+
+@media screen and (max-width: 1366px) {
+  .logoAbe {
+    width: 550px;
+    height: 155px;
+    transition: all 300ms;
+  }
+  
+  .abeLabel1 {
+    font-size: 27px;
+    font-family: Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    transition: all 300ms;
+  }
+}
+
+
+@media screen and (max-width: 1010px) {
+  .logoAbe {
+    width: 400px;
+    height: 115px;
+    transition: all 300ms;
+  }
+  
+  .abeLabel1 {
+    font-size: 23px;
+    font-family: Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    transition: all 300ms;
+  }
+}
+
+
 
 @media screen and (max-width: 674px) {
   .logoAbe {
     width: 300px;
     height: 85px;
-    filter: drop-shadow(0 0 5px black);
+    transition: all 300ms;
   }
 
   .abeLabel1 {
     font-size: 20px;
     filter: drop-shadow(0 0 5px black);
-    font-family: Geneva, Tahoma, sans-serif;
     font-weight: 900;
+    transition: all 300ms;
   }
 
   .abeSec{
@@ -1031,6 +1081,122 @@ main {
   }
   .flexGru {
     color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 1865px) {
+  .abeLabel2, .abeLabel3 {
+    font-size: 33px;
+  }
+  .abeLabel2-1, .abeLabel3-1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .abeLabel2, .abeLabel3 {
+    font-size: 25px;
+  }
+  .abeLabel2-1, .abeLabel3-1 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .home2 {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    user-select: none;
+  }
+
+  .home3 {
+    display: flex;
+    flex-direction: column-reverse !important;
+    width: 100vw;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    user-select: none;
+  }
+  
+  .abeImg1 {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    width: 300px;
+    height: auto;
+    aspect-ratio: 1.1;
+    object-fit: cover;
+    margin-right: 0vw;
+    z-index: 1;
+    outline: 1px #ffffff solid;
+  }
+  
+  .abeLabel2 {
+    flex-wrap: wrap;
+    flex-direction: column-reverse !important;
+    font-size: 28px;
+    filter: drop-shadow(0 0 5px black);
+    font-family: Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    width: 300px;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    outline: 1px #ffffff solid;
+    padding: 5px;
+    align-items: center;
+  }
+  
+  .abeLabel2-1 {
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 100;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+  }
+
+  .abeLabel3 {
+    flex-wrap: wrap;
+    flex-direction: column-reverse !important;
+    font-size: 28px;
+    filter: drop-shadow(0 0 5px black);
+    font-family: Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    width: 300px;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    outline: 1px #ffffff solid;
+    padding: 5px;
+    align-items: center;
+  }
+  
+  .abeLabel3-1 {
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 100;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+  }
+  
+  .abeImg2 {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    width: 300px;
+    height: auto;
+    aspect-ratio: 1.1;
+    object-fit: cover;
+    margin-right: 0vw;
+    z-index: 1;
+    outline: 1px #ffffff solid;
+    margin: auto;
   }
 }
 
