@@ -7,54 +7,70 @@
         <link rel="stylesheet" href="src/css/style.css">
         <title>Loja | Bebidas do Brasil</title>
     </head>
-    <body>
+    <body class="corpo-loja-destilados">
         <header>
-            <nav>
-                <ul id="menu">
-                    <li style="float: left"><a href="/index.html"><img src="./src/img/logo_e_variacoes/bebidas_do_brasil_white.png" alt="logo" class="logo"><font class="txtLogo"></font></a></li>
-                    <li style="float:right"><a href="loja.html">Destilados</a></li>
-                    <li style="float:right"><a href="loja.html">Fermentados</a></li>
-                    <li style="float:right"><a href="loja.html">Não Alcoólicos</a></li>
-                    <li style="float:right"><a href="">Carrinho</a></li>
-                    <li style="float:right"><a href="">Login</a></li>
+            <nav id="menu">
+                <a href="./index.html"><img src="./src/img/logo_e_variacoes/bebidas_do_brasil_white.png" alt="logo" class="logo"></a>
+                <ul>
+                    <li><a href="loja.html">Destilados</a></li>
+                    <li><a href="loja.html">Fermentados</a></li>
+                    <li><a href="">Carrinho</a></li>
+                    <li><a href="">Login</a></li>
                 </ul>
             </nav>
         </header>
             <main class="lojaContainer">
+                <!--<img src="./src/img/bebidas/mistura-de-copos-de-coquetel-com-gelo-e-limao.jpg" alt="copo-drink" class="loja-background">-->
                 <section>
-                    <h1>Descubra:</h1>
+                    <h1 class="tit-loja">Descubra:</h1>
                     <div class="bebidaContainer">
                         <div class="bebidaBox">
                             <div class="bebidaImg">
-                                <img src="src/img/bebidas/WHISKY CANEM (BLENDED).png" width="80px">
+                                <img class="bebida-img-tag" src="src/img/bebidas/WHISKY CANEM (BLENDED).png">
                             </div>
                             <div class="bebidaTit">
                                 Whisky Lamas Canem (Blended) 1L
                             </div>
                             <div class="bebidaVal">
-                                R$ 149,99
+                                R$ 140,70
+                            </div>
+                            <div>
+                                <input type="number"  name="quantidade" class="qtde-itens">
                             </div>
                         </div>
                         <div class="bebidaBox">
                             <div class="bebidaImg">
-                                <img src="src/img/bebidas/WHISKY UNION (PURE MALT).png" width="130px">
+                                <img class="bebida-img-tag" src="src/img/bebidas/WHISKY UNION (PURE MALT).png">
                             </div>
                             <div class="bebidaTit">
-                                Whisky Union Wine Cask
+                                Whisky Union Distillery Wine Cask
                             </div>
                             <div class="bebidaVal">
-                                R$ 316,90
+                                R$ 234,40
                             </div>
                         </div>
                         <div class="bebidaBox">
                             <div class="bebidaImg">
-                                <img src="src/img/bebidas/GLENFIDDICH GRANDE COURONNE 26 ANOS.jpg" width="70px">
+                                <img class="bebida-img-tag" 
+                                src="src/img/bebidas/image_92983_1_1_1_1.jpg">
                             </div>
                             <div class="bebidaTit">
-                                Glenfiddich Grande Couronne 26 anos 700ML
+                                Cachaça Claudionor
                             </div>
                             <div class="bebidaVal">
-                                R$ 3649,99
+                                R$ 47,70
+                            </div>
+                        </div>
+                        <div class="bebidaBox">
+                            <div class="bebidaImg">
+                                <img class="bebida-img-tag" 
+                                src="src/img/bebidas/casa-amarela-premium-prata-670-ml_1_650.jpg">
+                            </div>
+                            <div class="bebidaTit">
+                                Cachaça Casa Amarela
+                            </div>
+                            <div class="bebidaVal">
+                                R$ 30,10
                             </div>
                         </div>
                     </div>

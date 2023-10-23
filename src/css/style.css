@@ -279,16 +279,33 @@ main {
     padding: 2em;
 }
 
+.copo-drink {
+  width: 10%;
+  height: 10%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.tit-loja {
+  color: #ffffff;
+  text-shadow: 0 0 10px #000000;
+}
+
 .bebidaBox {
     background-color: rgb(240, 240, 240);
     width: 200px;
-    height: 330px;
+    height: 450px;
     box-shadow: 0 0 10px #0000008e;
     transition: box-shadow 300ms, border-radius 300ms, background-color 300ms;
     user-select: none;
     border-radius: 15px;
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    padding-top: 5px; 
 }
 
 .bebidaBox:hover {
@@ -301,14 +318,15 @@ main {
 .bebidaImg {
     margin: 0 auto;
     text-align: center;
-    max-width: 150px;
+    max-width: 140px;
 }
 
 .bebidaTit {
-    margin-top: 10px;
+    margin: 10px 10px 0px 10px;
     font-weight: 600;
     font-size: larger;
     text-align: center;
+    height: 57.6px;
 }
 
 .bebidaVal {
@@ -316,6 +334,10 @@ main {
     font-size: medium;
     text-align: center;
     margin: 0 auto;
+}
+
+.bebida-img-tag {
+  max-height: 233px;
 }
 
 /*CADASTRO*/
@@ -473,6 +495,13 @@ main {
   .butCadCont {
     margin-top: 4px;
   }
+}
+
+/* LOJA */
+
+.corpo-loja-destilados {
+  background-image: url("/src/img/bebidas/whisky-e1609964674686.jpg");
+  background-size:cover;
 }
 
 
