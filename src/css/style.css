@@ -165,6 +165,7 @@ nav li {
     #menu.responsive {
       height: 260px;
       display: flex;
+      position: fixed !important;
     }
     #menu.responsive ul {
       display: flex;
