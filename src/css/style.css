@@ -397,7 +397,7 @@ cursor: pointer;
 /*LOJA*/
 
 .lojaContainer {
-  height: 95vh;
+  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -438,8 +438,8 @@ cursor: pointer;
     flex-wrap: wrap;
     gap: 10px;
     margin: 1em auto;
-    padding-top: 30px;
     width: 99vw;
+
 }
 
 .copo-drink {
@@ -462,28 +462,41 @@ cursor: pointer;
 }
 
 .bebidaBox {
-    background-color: rgb(240, 240, 240);
+    background-color: #2b2b30a0;
+    color: white;
+    backdrop-filter: blur(30px);
+    user-select: none;
     width: 200px;
-    height: 450px;
+    height: 500px;
     box-shadow: 0 0 10px #0000008e;
-    transition: box-shadow 300ms, border-radius 300ms, background-color 300ms;
     user-select: none;
     border-radius: 15px;
     display: block;
-    padding-top: 5px; 
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    transform: translateY(-0px);
+    box-shadow: 0 5px 10px #00000090;
+    outline: 2px #2b2b30 solid;
+    border-bottom: 0px solid #2b2b30;
+    transition: box-shadow 300ms, background-color 300ms, text-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms;
 }
 
 .bebidaBox:hover {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px #000000;
-    transition: box-shadow 300ms, border-radius 300ms, background-color 300ms;
-    border-radius: 5px;
+    background-color: #ffffff2f;
+    box-shadow: 0 20px 20px #00000060;
+    text-shadow: 0 0 3px black;
+    transform: translateY(-3px);
+    outline: 4px #402F1D solid;
+    border-bottom: 4px solid #402F1D;
+    transition: box-shadow 300ms, background-color 300ms, text-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms;
 }
 
 .bebidaImg {
     margin: 0 auto;
     text-align: center;
-    max-width: 140px;
+    max-width: 200px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: white;
 }
 
 .bebidaTit {
@@ -507,8 +520,68 @@ cursor: pointer;
   font-family: Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: medium;
-  
 }
+
+.qtde-itens[type="number"] {
+  box-shadow: 0 0 3px #000000;
+  border: solid 0px black;
+  background-color: #ffffff85 !important;
+  height: 26px;
+  border-radius: 8px;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+  background-image: url('data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20viewBox%3D%220%200%2050%2067%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20stroke-width%3D%222%22%3E%3Cline%20x1%3D%221%22%20x2%3D%2250%22%20y1%3D%2233.5%22%20y2%3D%2233.5%22%20stroke%3D%22%23D8D8D8%22%2F%3E%3Cpolyline%20transform%3D%22translate(25%2020)%20rotate(45)%20translate(-25%20-20)%22%20points%3D%2219%2026%2019%2014%2032%2014%22%20stroke%3D%22%23000%22%2F%3E%3Cpolyline%20transform%3D%22translate(25%2045)%20rotate(225)%20translate(-25%20-45)%22%20points%3D%2219%2052%2019%2039%2032%2039%22%20stroke%3D%22%23000%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-position: center right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-color 300ms;
+  cursor: default;
+}
+
+.qtde-itens[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  opacity: 1 !important;
+  background: transparent !important;
+  border-width: 0px;
+  margin: 0;
+  height: 34px;
+  width: 23px;
+  cursor: default;
+}
+
+.qtde-itens:focus {
+  background-color: #ffffff !important;
+  border: solid 0px #00000000;
+  outline: solid 0px #00000000;
+  transition: background-color 300ms;
+  cursor: default;
+}
+
+.botao-submit-loja {
+  border-bottom: 2px solid #2b2b30 !important;
+  background-color: #ffffff85 !important;
+  border-radius: 10px;
+  outline: solid 1px #2b2b30;
+  border: 0px;
+  padding: 5px 15px;
+  margin: 0px 5px;
+  transform: translateY(-0px);
+  transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms, background-color 300ms;
+  }
+  
+.botao-submit-loja:hover {
+  border-bottom: 5px solid #402F1D !important;
+  border: 0px;
+  background-color: #ffffff !important;
+  outline: 2px #402F1D solid;
+  transform: translateY(-5px);
+  transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms, background-color 300ms;
+  cursor: pointer;
+  }
+
+
 
 /*CADASTRO*/
 .cadastroContainer{
@@ -1299,6 +1372,12 @@ cursor: pointer;
   border-radius: 0;
 }
 
+@media screen and (max-width: 290px) {
+  .scrollFotAbe {
+    font-size: small;
+  }
+}
+
 /*LOJAS*/
 
 .bebida-img-tag {
@@ -1338,4 +1417,11 @@ cursor: pointer;
   position: relative;
   bottom: 0;
   overflow-x: hidden !important;
+}
+
+@media screen and (max-width: 440px) {
+  .scrollFot {
+    font-size: smaller;
+    overflow-y: hidden;
+  }
 }
