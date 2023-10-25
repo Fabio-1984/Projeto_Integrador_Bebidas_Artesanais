@@ -7,6 +7,7 @@ let nomeRequired = document.querySelector('.nomeRequired');
 let submitButton = document.querySelector('#submit');
 document.querySelector('#submit').disabled = true;
 submitButton.classList.add('butErr');
+nomeRequired.classList.add('nomeRequiredVisible');
 
 //VALIDAR VALOR
 

@@ -459,10 +459,12 @@ cursor: pointer;
 
 .nomeRequired {
   display: none;
+  animation: fadeOut 300ms;
 }
 
 .nomeRequiredVisible {
   display: inline;
+  animation: fadeIn 300ms;
 }
 
 /*---------------RESPONSIVIDADE FALE CONOSCO-------------------*/
