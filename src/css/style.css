@@ -459,6 +459,7 @@ cursor: pointer;
   font-family: Geneva, Tahoma, sans-serif;
   text-shadow: 0 0 10px #000000;
   margin: 0px;
+  user-select: none;
 }
 
 .bebidaBox {
@@ -559,6 +560,56 @@ cursor: pointer;
   cursor: default;
 }
 
+.botaoClassific {
+  border-bottom: 2px solid #2b2b30 !important;
+  background-color: #ffffff85 !important;
+  border-radius: 10px;
+  outline: solid 1px #2b2b30;
+  border: 0px;
+  padding: 5px 15px;
+  margin: 10px 5px;
+  transform: translateY(-0px);
+  transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms, background-color 300ms;
+  user-select: none;
+  }
+  
+.botaoClassific:hover {
+  border: 0px;
+  background-color: #ffffff !important;
+  outline: 2px #402F1D solid;
+  transform: translateY(-3px);
+  transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms, background-color 300ms;
+  cursor: pointer;
+  }
+
+  .botaoClassific:active {
+    border-bottom: 2px solid #ffffff !important;
+    background-color: #ffffffe0 !important;
+    border-radius: 10px;
+    outline: solid 1px #ffffff;
+    border: 0px;
+    padding: 5px 15px;
+    margin: 10px 5px;
+    transform: translateY(0px);
+    transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms, background-color 300ms;
+    }
+
+    @media screen and (max-width: 415px) {
+      .tit-loja {
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin: 0px auto;
+      }
+      .botaoClassific {
+        width: 80%;
+      }
+      .bebidaBox {
+        width: 80%;
+      }
+    }
+
 .botao-submit-loja {
   border-bottom: 2px solid #2b2b30 !important;
   background-color: #ffffff85 !important;
@@ -580,8 +631,6 @@ cursor: pointer;
   transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms, background-color 300ms;
   cursor: pointer;
   }
-
-
 
 /*CADASTRO*/
 .cadastroContainer{
