@@ -1,6 +1,11 @@
 //VALIDAÇÃO
 
+let sacCad = document.querySelector('#formCad');
+let sacCadPos = document.querySelector('#formCadPos');
+let formSac = document.getElementsByTagName('sac');
+
 let heightBox = document.querySelector('.sacCad');
+
 let nomeInput = document.querySelector('#nome');
 let nomeLabel = document.querySelector('td[for="nome"]');
 let nomeHelper = document.querySelector('#nome-helper');
@@ -153,15 +158,32 @@ function liberarForm(){
         disableSubmit();
     }else{
         enableSubmit();
+        let chkBut = true;
+        return chkBut
     }
 }
 
-/*
-function liberarForm(){
-    if((!nomeLiberar == true && !emailLiberar == true) || (emailLiberar == true && !mensagemLiberar == true)) {
-        disableSubmit();
-    }else if ((nomeLiberar == true && emailLiberar == true) || (emailLiberar == true && mensagemLiberar == true)) {
-        enableSubmit();
-    }
-}
-*/
+// Mensagem de validação correta
+
+    submitButton.addEventListener("click", function eveForm() {
+        sacCad.style = "display: none !important";
+        sacCadPos.style = "display: block !important";
+        sacCadPos.classList.add("visible");
+        sacCadPos.innerHTML = `
+        <h1>
+        Olá!
+        </h1>
+        <div id="nomeForm" class="posNameEmail">
+        </div>
+        <div class="cadLabel1">Em breve, responderemos sua mensagem para o seguinte e-mail: 
+            <div id="emailForm" class="posNameEmail">
+        </div>
+        Até mais!
+        </div>
+        <img src="./src/img/logo_e_variacoes/bebidas_do_brasil_white.png" class="logoHome">
+        <ul class="butCadCont">
+        <li><a href="/index.html"> <button class="butCad">Voltar</button></a></li>
+        `
+        document.querySelector('#nomeForm').innerText = nomeInput.value;
+        document.querySelector('#emailForm').innerText = emailInput.value;
+    })
