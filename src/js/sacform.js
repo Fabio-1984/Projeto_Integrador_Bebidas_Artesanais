@@ -35,25 +35,16 @@ function enableSubmit() {
     submitButton.classList.remove('butErr');
 }
 
-function liberarForm(){
-    if(nomeLiberar == true) {
-        enableSubmit();
-    }else {
-        disableSubmit();
-    }
-}
-
-let nomeLiberar;
-let emailLiberar;
-let mensagemLiberar;
+let nomeLiberar = false;
+let emailLiberar = false;
+let mensagemLiberar = false;
 liberarForm();
 
 //VALIDAR VALOR NOME
 
 nomeInput.addEventListener("change", function(eventoNome) {
-    console.clear();
     let valor = eventoNome.target.value;
-    console.log(valor);
+    nomeLiberar = false;
     liberarForm();
 
     if(valor.length == 0) {
@@ -80,14 +71,14 @@ nomeInput.addEventListener("change", function(eventoNome) {
         nomeRequired.classList.remove('nomeRequiredVisible');
         nomeLiberar = true;
     }
+    liberarForm();
 })
 
 //VALIDAR VALOR EMAIL
 
 emailInput.addEventListener("change", function(eventoEmail) {
-    console.clear();
     let valorEmail = eventoEmail.target.value;
-    console.log(valorEmail);
+    emailLiberar = false;
     liberarForm();
 
     if(valorEmail.length == 0){
@@ -115,14 +106,14 @@ emailInput.addEventListener("change", function(eventoEmail) {
         emailRequired.classList.remove('emailRequiredVisible');
         emailLiberar = true;
     }
+    liberarForm();
 })
 
 //VALIDAR VALOR MENSAGEM
 
 mensagemInput.addEventListener("change", function(eventoMensagem) {
-    console.clear();
     let valorMensagem = eventoMensagem.target.value;
-    console.log(valorMensagem);
+    mensagemLiberar = false;
     liberarForm();
 
     if(valorMensagem.length == 0) {
@@ -150,4 +141,27 @@ mensagemInput.addEventListener("change", function(eventoMensagem) {
         mensagemRequired.classList.remove('mensagemRequiredVisible');
         mensagemLiberar = true;
     }
+    liberarForm();
 })
+
+function liberarForm(){
+    if(nomeLiberar == false) {
+        disableSubmit();
+    }else if (emailLiberar == false) {
+        disableSubmit();
+    }else if (mensagemLiberar == false) { 
+        disableSubmit();
+    }else{
+        enableSubmit();
+    }
+}
+
+/*
+function liberarForm(){
+    if((!nomeLiberar == true && !emailLiberar == true) || (emailLiberar == true && !mensagemLiberar == true)) {
+        disableSubmit();
+    }else if ((nomeLiberar == true && emailLiberar == true) || (emailLiberar == true && mensagemLiberar == true)) {
+        enableSubmit();
+    }
+}
+*/
