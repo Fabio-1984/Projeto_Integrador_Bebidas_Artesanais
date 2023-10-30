@@ -1474,3 +1474,21 @@ cursor: pointer;
     overflow-y: hidden;
   }
 }
+
+
+/* Estilização dos botôes da pagina bebidas.html */
+
+#filtro{
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+}
+
+.visivel{
+  display: block;
+}
+
+
+.hide{
+  display: none;
+}
