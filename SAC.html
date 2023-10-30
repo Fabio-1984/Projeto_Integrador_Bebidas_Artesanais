@@ -44,8 +44,9 @@
                             </td>
                             </tr>
                             <tr>
+                                <p id="email-helper" class="helper-text"></p>
                                 <td>E-mail:</td>
-                                <td class="cadCepTdResp"><input class="cadInputResp" id="email" type="email" name="email" size="50"><abbr title="Obrigatório"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                <td class="cadCepTdResp"><input class="cadInputResp" id="email" type="email" name="email" size="50"><abbr title="Obrigatório" class="emailRequired"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                                     <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
                                 </svg></abbr></td>
@@ -55,16 +56,17 @@
                                 <td class="cadCepTdResp"><input class="cadInputResp" type="tel" size="50" maxlength="11"></td>
                             </tr>
                             <tr>
+                                <p id="mensagem-helper" class="helper-text"></p>
                                 <td>Mensagem:</td>
-                                <td class="cadCepTdResp"><input class="cadInputResp" type="text" size="50" maxlength="2000"><abbr title="Obrigatório" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                <td class="cadCepTdResp"><input class="cadInputResp" type="text" size="50" maxlength="2000" id="mensagem"><abbr title="Obrigatório" class="mensagemRequired"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                                     <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
                                 </svg></abbr></td>
                             </tr>
                         </table>
                         <ul class="butCadCont">
-                            <li><a href="index.html"><button class="butCad" type="button">Cancelar</button></a></li>
-                            <li><a href=""><button class="butCad" type="submit" id="submit">Enviar</button></a></li>
+                            <li><button class="butCad" type="reset">Limpar</button></li>
+                            <li><button class="butCad" type="submit" id="butSubmit" value="submit">Enviar</button></li>
                         </ul>
                     </form>
                 </div>
