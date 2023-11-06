@@ -351,3 +351,33 @@ confirmarSenhaCadastro.addEventListener("change", function(evento){
 mostrarPopUp(confirmarSenhaCadastro, confirmarSenhaSvg);
 
 //-------------------Botão "Submit"-----------------//
+
+let botaoSubmit = document.getElementById("sub-btn-cad")
+let inputsValidos = {
+    usernameCadastro:false,
+    emailCadastro:false,
+    cpfCadastro:false,
+    enderecoCadastro:false,
+    cidadeCadastro:false,
+    estadoCadastro:false,
+    cepCadastro:false,
+    senhaCadastro:false,
+    confirmarSenhaCadastro:false
+}
+
+botaoSubmit.addEventListener("click", (e)=>{
+    if(inputsValidos.usernameCadastro == false ||
+    inputsValidos.emailCadastro == false ||
+    inputsValidos.cpfCadastro == false ||
+    inputsValidos.enderecoCadastro == false ||
+    inputsValidos.cidadeCadastro == false ||
+    inputsValidos.estadoCadastro == false ||
+    inputsValidos.cepCadastro == false ||
+    inputsValidos.senhaCadastro == false ||
+    inputsValidos.confirmarSenhaCadastro == false){
+        e.preventDefault()
+    }
+    else{
+        alert("Formulário enviado com sucesso.")
+    }
+})

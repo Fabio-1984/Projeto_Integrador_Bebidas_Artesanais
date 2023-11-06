@@ -585,6 +585,11 @@ cursor: pointer;
 
 /*-------------------ESTILIZAÇÃO CADASTRO-------------------*/
 
+label {
+  margin: 0px;
+  padding: 0px;
+}
+
 .corpo-cadastro {
   display:block;
   margin: 0px;
@@ -615,7 +620,7 @@ cursor: pointer;
   flex-wrap: nowrap;
   flex-direction: column;
   gap: 0px;
-  width: 630px;
+  width: 660px;
   outline: 2px #2b2b30 solid;
   transform: translateY(-0px);
   transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms;
@@ -698,7 +703,7 @@ cursor: pointer;
   border-top-right-radius: 20px;
   position:relative;
   bottom: 0;
-  overflow-x: hidden !important;
+  overflow-x:auto !important;
 }
 #svg-username-cadastro {
   display: none;
