@@ -76,7 +76,7 @@ function validaCPF(cpf) {
     
 }
 
-//------Função Armazenamento de dados para Envio------//
+/*------Função Armazenamento de dados para Envio------/
 
 function GetData(){
     let nomeDoUsuario = usernameCadastro.value;
@@ -88,7 +88,7 @@ function GetData(){
     let cepDoUsuario = cepCadastro.value;
     let senhaDoUsuario = confirmarSenhaCadastro.value;
 }
-
+*/
 
 
 //------------------ Validação "NOME" -------------//
@@ -106,12 +106,14 @@ usernameCadastro.addEventListener("change", function(evento){
         usernameCadastro.classList.add('error');
         usernameHelper.innerText = 'Seu nome deve ter 3 ou mais caracteres'
         usernameHelper.classList.add('visible')
+        inputsValidos.usernameCadastro = false
     } 
     else {
     //Estilos dinamicos caso o valor seja válido
         usernameCadastro.classList.remove('error');
         usernameHelper.classList.remove('visible');
-        usernameCadastro.classList.add('correct');  
+        usernameCadastro.classList.add('correct');
+        inputsValidos.usernameCadastro = true
     }
 })
 
@@ -132,6 +134,7 @@ emailCadastro.addEventListener("change", function(evento){
         emailCadastro.classList.remove('error');
         emailHelper.classList.remove('visible');
         emailCadastro.classList.add('correct');
+        inputsValidos.emailCadastro = true
     } 
     else {
     //Estilos dinamicos caso o valor não seja válido
@@ -139,6 +142,7 @@ emailCadastro.addEventListener("change", function(evento){
         emailCadastro.classList.add('error');
         emailHelper.innerText = 'Digite um e-mail válido.'
         emailHelper.classList.add('visible')
+        inputsValidos.emailCadastro = false
     }
 })
 
@@ -160,24 +164,28 @@ cpfCadastro.addEventListener("change", function(evento){
         cpfCadastro.classList.add('error');
         cpfHelper.innerText = 'Digite apenas números.';
         cpfHelper.classList.add('visible');
+        inputsValidos.cpfCadastro = false
     }
     else if (valor.length < 11) {
         cpfCadastro.classList.remove('correct');
         cpfCadastro.classList.add('error');
         cpfHelper.innerText = 'CPF Incompleto.';
         cpfHelper.classList.add('visible');
+        inputsValidos.cpfCadastro = false
     }
     else if (!validaCPF(cpfCadastro.value)){
         cpfCadastro.classList.remove('correct');
         cpfCadastro.classList.add('error');
         cpfHelper.innerText = 'Digite um CPF válido.';
         cpfHelper.classList.add('visible')
+        inputsValidos.cpfCadastro = false
     }
     else {
     //Estilos dinamicos caso o valor seja válido
         cpfCadastro.classList.remove('error');
         cpfHelper.classList.remove('visible');
         cpfCadastro.classList.add('correct');
+        inputsValidos.cpfCadastro = true
     }
 })
 
@@ -199,13 +207,15 @@ enderecoCadastro.addEventListener("change", function(evento){
         enderecoCadastro.classList.add('error');
         enderecoHelper.innerText = 'Digite o endereço completo.'
         enderecoHelper.classList.add('visible')
+        inputsValidos.enderecoCadastro = false
     }
     
     else {
     //Estilos dinamicos caso o valor seja válido
         enderecoCadastro.classList.remove('error');
         enderecoHelper.classList.remove('visible');
-        enderecoCadastro.classList.add('correct');  
+        enderecoCadastro.classList.add('correct');
+        inputsValidos.enderecoCadastro = true 
     }
 })
 
@@ -227,12 +237,14 @@ cidadeCadastro.addEventListener("change", function(evento){
         cidadeCadastro.classList.add('error');
         cidadeHelper.innerText = 'O nome da Cidade deve ter mais de 3 letras.'
         cidadeHelper.classList.add('visible')
+        inputsValidos.cidadeCadastro = false
     } 
     else {
     //Estilos dinamicos caso o valor seja válido
         cidadeCadastro.classList.remove('error');
         cidadeHelper.classList.remove('visible');
-        cidadeCadastro.classList.add('correct');  
+        cidadeCadastro.classList.add('correct');
+        inputsValidos.cidadeCadastro = true
     }
 })
 
@@ -254,12 +266,14 @@ estadoCadastro.addEventListener("change", function(evento){
         estadoCadastro.classList.add('error');
         estadoHelper.innerText = 'O nome do Estado deve ter mais de 3 letras.'
         estadoHelper.classList.add('visible')
+        inputsValidos.estadoCadastro = false
     } 
     else {
     //Estilos dinamicos caso o valor seja válido
         estadoCadastro.classList.remove('error');
         estadoHelper.classList.remove('visible');
-        estadoCadastro.classList.add('correct');  
+        estadoCadastro.classList.add('correct');
+        inputsValidos.estadoCadastro = true  
     }
 })
 
@@ -283,17 +297,20 @@ cepCadastro.addEventListener("change", function(evento) {
         cepCadastro.classList.add('error');
         cepHelper.innerText = 'Digite somente números.';
         cepHelper.classList.add('visible');
+        inputsValidos.cepCadastro = false
         
     } else if(valor.length < 8) {
         cepCadastro.classList.remove('correct');
         cepCadastro.classList.add('error');
         cepHelper.innerText = 'CEP Incompleto.';
         cepHelper.classList.add('visible');
+        inputsValidos.cepCadastro = false
     } else {
     //Estilos dinamicos caso o valor seja válido
         cepCadastro.classList.remove('error');
         cepHelper.classList.remove('visible');
-        cepCadastro.classList.add('correct');  
+        cepCadastro.classList.add('correct');
+        inputsValidos.cepCadastro = true  
     }  
 })
 
@@ -313,12 +330,14 @@ senhaCadastro.addEventListener("change", function(evento){
         senhaCadastro.classList.add('error');
         senhaHelper.innerText = 'A Senha precisa ter mais de 8 caracteres.';
         senhaHelper.classList.add('visible');
+        inputsValidos.senhaCadastro = false
     } 
     else {
     //Estilos dinamicos caso o valor seja válido
         senhaCadastro.classList.remove('error');
         senhaHelper.classList.remove('visible');
-        senhaCadastro.classList.add('correct');  
+        senhaCadastro.classList.add('correct');
+        inputsValidos.senhaCadastro = true
     }
 })
 
@@ -339,12 +358,14 @@ confirmarSenhaCadastro.addEventListener("change", function(evento){
         confirmarSenhaCadastro.classList.add('error');
         confirmarSenhaHelper.innerText = 'A senha precisa ser idêntica.';
         confirmarSenhaHelper.classList.add('visible');
+        inputsValidos.confirmarSenhaCadastro = false
     } 
     else {
     //Estilos dinamicos caso o valor seja válido
         confirmarSenhaCadastro.classList.remove('error');
         confirmarSenhaHelper.classList.remove('visible');
-        confirmarSenhaCadastro.classList.add('correct');  
+        confirmarSenhaCadastro.classList.add('correct');
+        inputsValidos.confirmarSenhaCadastro = true  
     }
 })
 
@@ -376,6 +397,7 @@ botaoSubmit.addEventListener("click", (e)=>{
     inputsValidos.senhaCadastro == false ||
     inputsValidos.confirmarSenhaCadastro == false){
         e.preventDefault()
+        alert("Preencha corretamente os campos antes de enviar.")
     }
     else{
         alert("Formulário enviado com sucesso.")
