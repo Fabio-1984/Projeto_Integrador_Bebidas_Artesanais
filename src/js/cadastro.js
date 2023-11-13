@@ -87,7 +87,7 @@ function validaCPF(cpf) {
     let estadoDoUsuario = estadoCadastro.value;
     let cepDoUsuario = cepCadastro.value;
     let senhaDoUsuario = confirmarSenhaCadastro.value;
-}
+}*/
 
 
 
