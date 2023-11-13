@@ -78,7 +78,7 @@ function validaCPF(cpf) {
 
 //------Função Armazenamento de dados para Envio------//
 
-function GetData(){
+/*function GetData(){
     let nomeDoUsuario = usernameCadastro.value;
     let emailDoUsuario = emailCadastro.value;
     let cpfDoUsuario = cpfCadastro.value;
@@ -87,7 +87,7 @@ function GetData(){
     let estadoDoUsuario = estadoCadastro.value;
     let cepDoUsuario = cepCadastro.value;
     let senhaDoUsuario = confirmarSenhaCadastro.value;
-}
+}*/
 
 
 
