@@ -22,7 +22,7 @@
   }
   
   ::-webkit-scrollbar-thumb:hover {
-	  background-color: #ffffff
+	  background-color: #ffffff;
 	  border-radius: 10px;
     transition: background-color 0.5s;
   }
@@ -632,22 +632,46 @@ cursor: pointer;
   cursor: pointer;
   }
 
-/*CADASTRO*/
+
+/*-------------------ESTILIZAÇÃO CADASTRO-------------------*/
+
+label {
+  margin: 0px;
+  padding: 0px;
+}
+
+.corpo-cadastro {
+  display:block;
+  margin: 0px;
+  padding: 0px;
+  background-size:cover;
+}
+.cadMain {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  z-index: 0;
+  }
+
 .cadastroContainer{
   background-color: #2b2b30a0;
   backdrop-filter: blur(30px);
   box-shadow: 0 5px 10px #00000090;
   border-bottom: 0px solid #2b2b30;
   color: white;
-  margin: 0 auto;
+  margin: auto;
   border-radius: 0px;
   padding: 10px;
   border-radius: 25px;
   flex-wrap: nowrap;
   flex-direction: column;
   gap: 0px;
-  width: 575px;
-  height: 550px;
+  width: 620px;
   outline: 2px #2b2b30 solid;
   transform: translateY(-0px);
   transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms;
@@ -658,6 +682,10 @@ cursor: pointer;
   display: flex;
   gap: 8px;
 
+}
+
+#cadTab{
+  margin-left: 40px;
 }
 .cadastroContainer input {
 	appearance: none;
@@ -676,7 +704,6 @@ cursor: pointer;
   transform: translateY(-0px);
   transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms, background-color 300ms;
 }
-
 .cadastroContainer:hover {
   box-shadow: 0 30px 30px #00000060;
   outline: 4px #402F1D solid;
@@ -684,7 +711,6 @@ cursor: pointer;
   transform: translateY(-10px);
   transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms;
 }
-
 .cadastroContainer abbr {
   font-style: italic;
   color: #ffffff;
@@ -693,7 +719,6 @@ cursor: pointer;
   margin-left: 5px;
   cursor: default;
 }
-
 .cadastroContainer input:focus {
   border-bottom: 7px solid #402F1D;
   background-color: #ffffff;
@@ -701,15 +726,85 @@ cursor: pointer;
   transform: translateY(-2px);
   transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms, background-color 300ms;
 }
-
 .cadastroContainer tr {
   margin: 10px;
   text-align: right;
 }
-
 .cadCepTdResp {
   margin: 10px;
   text-align: left;
+}
+.helper-text {
+  display: none;
+  margin-bottom: 0px;
+  text-align: left;
+  font-size: smaller;
+  padding-left: 10px;
+  color: lightpink;
+}
+.scrollFotCad {
+  color: white;
+  padding: 5px;
+  margin-top: 10px;
+  justify-content: center;
+  font-weight: 800;
+  font-size: larger;
+  text-align: center;
+  width: 100%;
+  height: 83.5px;
+  font-size: 15px;
+  font-weight: 600;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position:relative;
+  bottom: 0;
+  overflow-x:auto !important;
+}
+#svg-username-cadastro {
+  display: none;
+}
+#svg-email-cadastro {
+  display: none;
+}
+#svg-cpf-cadastro{
+  display: none;
+}
+#svg-endereco-cadastro {
+  display: none;
+}
+#svg-cidade-cadastro {
+  display: none;
+}
+#svg-estado-cadastro{
+  display: none;
+}
+#svg-cep-cadastro {
+  display: none;
+}
+#svg-senha-cadastro {
+  display: none;
+}
+#svg-confirmar-senha-cadastro{
+  display: none;
+}
+.required-popup::after {
+  display: block;
+}
+input.error {
+  border: solid 2px #992020;
+  background-color: #CCBBBB;
+  color: #662020;
+}
+input.correct {
+  background-color: #BBCCBB;
+  border: solid 2px #206620;
+  color: #206620;
+}
+.visible {
+  display: block;
+}
+.unvisible {
+  display: none;
 }
 
 /*---------------RESPONSIVIDADE CADASTRO-------------------*/
@@ -723,13 +818,12 @@ cursor: pointer;
     color: white;
     margin: 55px auto 0px auto;
     border-radius: 0px;
-    padding: 0px;
+    padding: 10px;
     border-radius: 25px;
     flex-wrap: nowrap;
     flex-direction: column;
     gap: 0px;
     width: 360px;
-    height: 500px;
     outline: 2px #2b2b30 solid;
     transform: translateY(-0px);
     transition: box-shadow 300ms, transform 300ms, outline 300ms, border-bottom 300ms;
@@ -778,14 +872,18 @@ cursor: pointer;
     margin-top: 8px;
   }
 }
-
+#cadTab{
+  margin-left: 10px;
+}
 @media screen and (max-width: 517px) {
-  .cadastroContainer {
-    height: 482px;
-  }
-
   .butCadCont {
-    margin-top: 4px;
+    margin: 4px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .scrollFotCad {
+    font-size: smaller;
+    overflow-y: hidden;
   }
 }
 
@@ -953,7 +1051,7 @@ cursor: pointer;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-mask-image: linear-gradient(black 80%, transparent);
+  mask-image: linear-gradient(black 80%, transparent); /*Paulo retirou "webkit*/
 }
 
 .home2 {
@@ -1001,7 +1099,7 @@ cursor: pointer;
 }
 
 .abeLabel2-1 a {
-  text-decoration: !important;
+  text-decoration: line !important; /*O Paulo adicionou o "line" porque estava dando erro no vscode*/
   color: white !important;
 }
 
@@ -1049,7 +1147,7 @@ cursor: pointer;
 }
 
 .abeLabel3-1 a {
-  text-decoration: !important;
+  text-decoration: line !important; /*O Paulo adicionou o "line" porque estava dando erro no vscode*/
   color: white !important;
 }
 
@@ -1057,7 +1155,7 @@ cursor: pointer;
   background-image: url("/src/img/logoProz/pattern.png");
   background-size: cover;
   height: 464.5px;
-  -webkit-mask-image: linear-gradient(transparent 0%, black 30%);
+  mask-image: linear-gradient(transparent 0%, black 30%); /*Paulo retirou "webkit*/
   padding-top: 100px;
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -1163,7 +1261,7 @@ cursor: pointer;
 }
 
 #grupoNome:hover{
-  -webkit-mask-image: linear-gradient(transparent, black 70%);
+  mask-image: linear-gradient(transparent, black 70%); /*Paulo retirou "webkit*/
   transition: all 300ms;
 }
 
@@ -1270,7 +1368,7 @@ cursor: pointer;
     filter: brightness(9999);
   }
   #grupoNome {
-    -webkit-mask-image: linear-gradient(transparent, black 70%);
+    mask-image: linear-gradient(transparent, black 70%); /*Paulo retirou "webkit*/
   }
   .flexGru {
     color: #ffffff;
