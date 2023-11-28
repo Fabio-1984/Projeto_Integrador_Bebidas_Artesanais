@@ -1020,7 +1020,7 @@ input.correct {
 @media screen and (max-width: 674px) {
 
   .cadMain {
-    height: 100%;
+    height: 100vh;
   }
 
   .scrollFotCadastro {
@@ -1095,6 +1095,11 @@ input.correct {
   margin-left: 10px;
 }
 @media screen and (max-width: 517px) {
+  .scrollFotCad {
+    font-size: smaller;
+    position:relative;
+    overflow-y: hidden;
+  }
   .butCadCont {
     margin: 4px;
   }
@@ -1102,6 +1107,7 @@ input.correct {
 @media screen and (max-width: 440px) {
   .scrollFotCad {
     font-size: smaller;
+    position:relative;
     overflow-y: hidden;
   }
 }
