@@ -163,7 +163,7 @@ nav li {
       top: 8px;
     }
     #menu.responsive {
-      height: 260px;
+      height: 165px;
       display: flex;
       position: fixed !important;
     }
@@ -172,7 +172,6 @@ nav li {
       flex-direction: column;
       gap: 10px;
       position: absolute;
-      height: 100%;
       width: 98%;
       padding-top: 60px;
     }
