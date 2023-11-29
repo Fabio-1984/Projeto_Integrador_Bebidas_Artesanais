@@ -1804,14 +1804,10 @@ input.correct {
 #filtro{
   text-align: center;
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
-.visivel{
-  display: block;
-}
-
-
-.hide{
-  display: none;
+#filtro button a{
+  text-decoration: none;
+  color: #000000;
 }
