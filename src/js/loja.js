@@ -7,6 +7,36 @@ function navBar() {
     }
 }
 
+function criarProdutos() {
+    for(let i = 0; i < arrayProdutos.length; i++){
+        let novoProduto = document.createElement('div');
+        novoProduto.innerHTML = 
+        `
+            <div class="bebidaBox">
+                <div class="bebidaImg">
+                    <img class="bebida-img-tag" ${arrayProdutos[i].imagem}>
+                </div>
+                <div class="bebidaTit">
+                    ${arrayProdutos[i].titulo}
+                </div>
+                <div class="bebidaVal">
+                    <span>Preço: R$</span>
+                    <span class="span-preco">${arrayProdutos[i].preco}</span>
+                </div>
+                <div class="quantidadeEBotao">
+                    <div>
+                        <label for="quantidade${i}">Quantidade:</label>
+                        <input type="number" min='1' id="quantidade${i}" name="quantidade${i}" class="qtde-itens">
+                    </div>
+                    <button type="submit" class="botao-submit-loja">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        `
+        let divElement = document.querySelector('.bebidaContainer');
+        divElement.appendChild(novoProduto);
+    }   
+}
+
 const arrayProdutos = [
     {
         imagem: 'src="src/img/bebidas/WHISKY CANEM (BLENDED).png"',
@@ -58,28 +88,44 @@ const arrayProdutos = [
     }  
 ]
 
-for(let i = 0; i < arrayProdutos.length; i++){
-    const novoProduto = document.createElement('div');
-    novoProduto.innerHTML = 
-    `<div class="bebidaBox">
-    <div class="bebidaImg">
-        <img class="bebida-img-tag" ${arrayProdutos[i].imagem}>
-    </div>
-    <div class="bebidaTit">
-        ${arrayProdutos[i].titulo}
-    </div>
-    <div class="bebidaVal">
-        <label for="precoItem">Preço: R$</label>
-        <span class="span-preco">${arrayProdutos[i].preco}</span>
-    </div>
-    <div class="quantidadeEBotao">
-        <div>
-            <label for="quantidade">Quantidade:</label>
-            <input type="number" min='1' id="quantidade" name="quantidade" class="qtde-itens">
-        </div>
-        <button type="submit" class="botao-submit-loja">Adicionar ao Carrinho</button>
-    </div>
-    `
-    const divElement = document.querySelector('.bebidaContainer');
-    divElement.appendChild(novoProduto);
-}
+criarProdutos()
+
+let botaoGeral = document.getElementById('botaoClassificGeral');
+let botaoDest = document.getElementById('botaoClassificDest');
+let botaoFerm = document.getElementById('botaoClassificFerm');
+let divElement = document.querySelectorAll('.bebidaBox') 
+let bgLoja = document.querySelector('.corpo-loja')
+
+console.log(divElement)
+
+botaoDest.addEventListener("click", (e) => {
+    bgLoja.style.backgroundImage = "url('/src/img/bebidas/whisky-e1609964674686.jpg')";
+    for(let i = 0; i < divElement.length; i++){
+        if(arrayProdutos[i].processoProducao == "f"){
+            divElement[i].style.display = "none";
+
+        }
+        else{
+            divElement[i].style.display = "block";
+        }
+    }
+});
+
+botaoGeral.addEventListener("click", (e) => {
+    bgLoja.style.backgroundImage = "url('/src/img/bebidas/mistura-de-copos-de-coquetel-com-gelo-e-limao.jpg')";
+    for(let i = 0; i < divElement.length; i++){
+        divElement[i].style.display = "block";
+    }
+});
+
+botaoFerm.addEventListener("click", (e) => {
+    bgLoja.style.backgroundImage = "url('/src/img/bebidas/cerveja-em-uma-caneca-de-vidro-1.jpg')";
+    for(let i = 0; i < divElement.length; i++){
+        if(arrayProdutos[i].processoProducao == "d"){
+            divElement[i].style.display = "none";
+        }
+        else{
+            divElement[i].style.display = "block";
+        }
+    }
+});
